@@ -48,9 +48,13 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.github.liaodongxiaoxiao"
             artifactId = "ktor-extensions"
-            version = "v1.0.1"
+            version = "v1.0.2"
 
             from(components["java"])
         }
+    }
+
+    repositories {
+        mavenLocal()
     }
 }
