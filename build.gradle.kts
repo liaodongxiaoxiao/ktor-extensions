@@ -45,10 +45,10 @@ dependencies {
 
 publishing {
     publications {
-        create<MavenPublication>("maven") {
+        val mavenJava by creating(MavenPublication::class) {
             groupId = "com.github.liaodongxiaoxiao"
             artifactId = "ktor-extensions"
-            version = "v1.0.2"
+            version = "v1.0.3"
 
             from(components["java"])
         }
